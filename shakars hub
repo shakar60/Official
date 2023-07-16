@@ -1,6 +1,8 @@
 -- Notifacation
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Notification./main/shakar%236955",true))()
+Section:NewKeybind("Open&Close", "Open&Close", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
 
 -- Local Library & Window
 
