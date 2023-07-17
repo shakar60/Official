@@ -320,7 +320,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_K2
 end)
 
 Tab9Section:NewButton("SpiderMan Script", "Loads SpiderMan Script", function()
-loadstring(game:HttpGet(('https://pastebin.com/raw/2X0hKUgq'),true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Spiderman./main/Spiderman",true))()
     print("Clicked")
 end)
 
