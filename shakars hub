@@ -533,7 +533,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/redd
     print("Clicked")
 end)
 
-Tab9Section:NewButton("Chat Bypass Script", "Lets You Say Anything You Want", function()
+Tab1Section:NewButton("Chat Bypass Script", "Lets You Say Anything You Want", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Chat/main/Bypass",true))()
     print("Clicked")
 end)
