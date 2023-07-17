@@ -572,3 +572,8 @@ Tab2Section:NewButton("Esclipe Hub V0.95", "Loads Esclipe Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Esclipe-Hub-V-0.95/main/Real",true))()
     print("Clicked")
 end)
+
+Tab2Section:NewButton("Fe fake tools gamepassV4", "Gives you some tools", function()
+loadstring(game:HttpGet(('https://pastefy.app/VYIAk3o1/raw'),true))()
+    print("Clicked")
+end)
