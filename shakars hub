@@ -534,11 +534,21 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/redd
 end)
 
 Tab9Section:NewButton("Chat Bypass Script", "Lets You Say Anything You Want", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/.sc/main/.w",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Chat/main/Bypass",true))()
     print("Clicked")
 end)
 
 Tab5Section:NewButton("F tool", "Gives You F Tool", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/F/main/Tool",true))()
+    print("Clicked")
+end)
+
+Tab1Section:NewButton("Chat Spammer", "Spams Chat Anyword You Want", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/chatspammer/main/chatspammer", true))()
+    print("Clicked")
+end)
+
+Tab1Section:NewButton("Autoclicker", "Loads AutoClicker For Any Map", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Autoclicker/main/Working",true))()
     print("Clicked")
 end)
