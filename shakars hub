@@ -42,7 +42,7 @@ Tab1Section:NewSlider("JumpPower", "Makes You Jump Higher", 500, 50, function(s)
 end)
 
 Tab1Section:NewSlider("Fov Changer", "Changes Your Fov", 200, 0, function(s) -- 200 (MaxValue) | 0 (MinValue)
-    game.Players.Localfov = s
+    Localfov = s
 end)
 
 Tab1Section:NewButton("Rejoin Button Script", "Loads a Script Whenever You Get Kicked You Can Rejoin", function()
