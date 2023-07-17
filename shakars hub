@@ -552,3 +552,8 @@ Tab1Section:NewButton("Autoclicker", "Loads AutoClicker For Any Map", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Autoclicker/main/Working",true))()
     print("Clicked")
 end)
+
+Tab1Section:NewButton("Shift Lock", "Loads Shift Lock For Any Map", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/WQ9NPeDS'))();
+    print("Clicked")
+end)
