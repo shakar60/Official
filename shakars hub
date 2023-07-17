@@ -562,3 +562,8 @@ Tab1Section:NewButton("Chat Hax", "Loads Chat Hax", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/MBpnp3yS'))()
     print("Clicked")
 end)
+
+Tab9Section:NewButton("Mm2 Admin Panel", "Loads Mm2 Admin Panel", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MarsQQ/ScriptHubScripts/master/MM2%20Admin%20Panel"))()
+    print("Clicked")
+end)
