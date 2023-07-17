@@ -557,3 +557,8 @@ Tab1Section:NewButton("Shift Lock", "Loads Shift Lock For Any Map", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/WQ9NPeDS'))();
     print("Clicked")
 end)
+
+Tab1Section:NewButton("Chat Hax", "Loads Chat Hax", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/MBpnp3yS'))()
+    print("Clicked")
+end)
