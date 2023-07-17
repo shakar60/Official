@@ -456,7 +456,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/EX6qHypK", true))()
 end)
 
 Tab2Section:NewButton("British Hub", "Loads a British Hub", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/RobloxArceusXScript/ProtectedLol/main/BritishHubV9'))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RedCoat8102/Britishhub/main/Protected_5528274969578405.lua.txt"))()
     print("Clicked")
 end)
 
