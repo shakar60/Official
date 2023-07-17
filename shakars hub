@@ -567,3 +567,5 @@ Tab9Section:NewButton("Mm2 Admin Panel", "Loads Mm2 Admin Panel", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MarsQQ/ScriptHubScripts/master/MM2%20Admin%20Panel"))()
     print("Clicked")
 end)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Esclipe-Hub-V-0.95/main/Real",true))()
