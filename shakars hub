@@ -41,32 +41,6 @@ Tab1Section:NewSlider("JumpPower", "Makes You Jump Higher", 500, 50, function(s)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
-
-local player = game.Players.LocalPlayer
-local camera = game.Workspace.CurrentCamera
-
-local fovSlider = script.Parent.Frame.Slider
-local fovValueLabel = script.Parent.Frame.TextLabel
-
--- Set initial FOV value and update the label text
-local defaultFOV = 70
-fovSlider.Value = defaultFOV
-fovValueLabel.Text = "FOV: " .. tostring(defaultFOV)
-
--- Function to update the camera's FOV
-local function updateFOV(value)
-    camera.FieldOfView = value
-    fovValueLabel.Text = "FOV: " .. tostring(value)
-end
-
--- Event handler for the slider's value changes
-fovSlider.Changed:Connect(function()
-    local newValue = fovSlider.Value
-    updateFOV(newValue)
-end)
-
-
-
 Tab1Section:NewButton("Rejoin Button Script", "Loads a Script Whenever You Get Kicked You Can Rejoin", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts-2/main/rejoin%20button%20for%20kick%20message.lua", true))()
     print("Clicked")
