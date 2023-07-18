@@ -41,6 +41,10 @@ Tab1Section:NewSlider("JumpPower", "Makes You Jump Higher", 500, 50, function(s)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
+Tab1Section:NewSlider("Fov Changer", "Makes You Change Your Fov", 500, 0, function(s) -- 500 (MaxValue) | 50 (MinValue)
+    workspace.CurrentCamera.FieldOfView = s
+end)
+
 Tab1Section:NewButton("Rejoin Button Script", "Loads a Script Whenever You Get Kicked You Can Rejoin", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts-2/main/rejoin%20button%20for%20kick%20message.lua", true))()
     print("Clicked")
