@@ -46,9 +46,9 @@ Tab1Section:NewSlider("JumpPower", "Makes You Jump Higher", 500, 50, function(s)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
-Section:NewTextBox("TextboxText", "TextboxInfo", function(s) 500, 50, function(s) -- 500 (MaxValue) | 50 (MinValue)
-      game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
-	print(txt)
+Section:NewTextBox("Set JumpPower", "Sets JumpPower", function(s) function(s)
+      game.Players.LocalPlayer.Character.Humanoid.JumpPower = 500
+	print(Done)
 end)
 
 Tab1Section:NewButton("Rejoin Button Script", "Loads a Script Whenever You Get Kicked You Can Rejoin", function()
