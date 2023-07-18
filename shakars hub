@@ -41,7 +41,7 @@ Tab1Section:NewSlider("JumpPower", "Makes You Jump Higher", 500, 50, function(s)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
-Tab1Section:NewSlider("Fov Changer", "Makes You Change Your Fov", 120, 0, function(s) -- 120 (MaxValue) | 0 (MinValue)
+Tab1Section:NewSlider("Fov Changer", "Makes You Change Your Fov", 120, 0, function(s) -- 120 (MaxValue) | 50 (MinValue)
     workspace.CurrentCamera.FieldOfView = s
 end)
 
