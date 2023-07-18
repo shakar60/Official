@@ -60,7 +60,7 @@ Tab1Section:NewTextBox("Set Fov", "Sets Fov", function(s)
 	print(s)
 end)
 
-Tab1Section:NewSlider("Set Fov", "Sets Fov", 500, 0, function(s)
+Tab1Section:NewTexBox("Set Fov", "Sets Fov", function(s)
     workspace.Gravity = s
 	print(s)
 end)
