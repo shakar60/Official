@@ -573,7 +573,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Esclipe-Hub-
     print("Clicked")
 end)
 
-Tab2Section:NewButton("Fe fake tools gamepassV4", "Loads Esclipe Hub", function()
+Tab2Section:NewButton("Fe Fake Tools GamepassV4", "Loads Fe Fake Tools Gamepass V4", function()
 loadstring(game:HttpGet(('https://pastefy.app/VYIAk3o1/raw'),true))()
     print("Clicked")
 end)
