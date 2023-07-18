@@ -9,7 +9,7 @@ local Window = Library.CreateLib("shakars hub", "Synapse")
 
 -- Tabs
 
-local Tab1 = Window:NewTab("Scripts")
+local Tab1 = Window:NewTab("Main Tab")
 local Tab2 = Window:NewTab("Hubs/Guis")
 local Tab3 = Window:NewTab("Dh Scripts")
 local Tab7 = Window:NewTab("Admin commands")
@@ -33,15 +33,15 @@ local Tab18Section = Tab18:NewSection("Credits")
 
 -- The Scripts
 
-Tab1Section:NewSlider("Walkspeed", "Makes You Walk Faster", 1000, 16, function(s) -- 1000 (MaxValue) | 16 (MinValue)
+Tab1Section:NewSlider("WalkSpeed", "Changes How Fast You Walk,Max WalkSpeed Is 1000", 1000, 16, function(s) -- 1000 (MaxValue) | 16 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
-Tab1Section:NewSlider("JumpPower", "Makes You Jump Higher", 500, 50, function(s) -- 500 (MaxValue) | 50 (MinValue)
+Tab1Section:NewSlider("JumpPower", "Changes How Hight You Jump,Max JumpPower Is 500", 500, 50, function(s) -- 500 (MaxValue) | 50 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
-Tab1Section:NewSlider("Fov Changer", "Makes You Change Your Fov", 120, 0, function(s) -- 120 (MaxValue) | 50 (MinValue)
+Tab1Section:NewSlider("Fov Changer", "Changes Your Fov,Max Fov Is 120", 120, 0, function(s) -- 120 (MaxValue) | 50 (MinValue)
     workspace.CurrentCamera.FieldOfView = s
 end)
 
@@ -50,8 +50,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts-2/m
     print("Clicked")
 end)
 
-Tab1Section:NewButton("Infinite Jumps", "Makes Your Jump Infinite", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/oksinfjump/main/workssssss",true))()
+Tab1Section:NewToggle("Toggle Infinite Jumps", "Makes Your Jump Infinite", function()
+Local InfiniteJumpEnabled = true
+     game:GetService("UserInputService").JumpRequest:connect(function()
+        if InfiniteJumpEnabled then
+        end)  game:GetService"Players".LocalPlayer.Character:FindFistChildOfClass'Humanoid'":ChangeState("Jumping")
+    end)
+end)
+
     print("Clicked")
 end)
 
