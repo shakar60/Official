@@ -1,4 +1,4 @@
--- Script Hub Is Made By shakar#-- Script Hub Is Made By shakar#6955
+-- Script Hub Is Made By shakar#6955
 
 -- If Your Reading This Please Dont Leak This Script
 
@@ -46,9 +46,9 @@ Tab1Section:NewSlider("JumpPower", "Makes You Jump Higher", 500, 50, function(s)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
-Tab1Section:NewTextBox("Set JumpPower","Set JumpPower", 500, 50, function(s) -- 500 (MaxValue) | 50 (MinValue)
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
-	print(Done)
+Section:NewTextBox("TextboxText", "TextboxInfo", function(s) 500, 50, function(s) -- 500 (MaxValue) | 50 (MinValue)
+      game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+	print(txt)
 end)
 
 Tab1Section:NewButton("Rejoin Button Script", "Loads a Script Whenever You Get Kicked You Can Rejoin", function()
