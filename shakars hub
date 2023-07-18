@@ -114,7 +114,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/zAuR0JUT"))()
     print("Clicked")
 end)
 
-Tab2Section:NewButton("Synapse X Executor (Patched!)", "Loads Synapse X Executor", function()
+Tab2Section:NewButton("Synapse X Executor", "Loads Synapse X Executor", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/Chillz-s-scripts/main/Synapse-X-Remake.lua"))()
     print("Clicked")
 end)
@@ -135,7 +135,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/XRoLLu/UWU/main/BUILD
 end)
 
 Tab1Section:NewButton("Fe Save Location Script", "Save Your Location Script", function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Tp%20Place%20GUI'),true))()
+loadstring(game:HttpGet(('https://0raw.githubusercontent.com/0Ben1/fe/main/Tp%20Place%20GUI'),true))()
     print("Clicked")
 end)
 
@@ -408,6 +408,8 @@ Tab18Section:NewLabel("i dont give credits to scripts")
 Tab18Section:NewLabel("Script gui/hub is made by shakar#6955")
 
 Tab18Section:NewLabel("The gui/hub is kavo ui library")
+
+Tab18Section:NewLabel("Credits Bido Skins For Showcasing My Script Hub")
 
 Tab7Section:NewButton("Nameless Admin", "Loads An Admin that is useful", function()
 loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Nameless-Admin-10833"))()
