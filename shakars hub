@@ -1,4 +1,4 @@
--- Script Hub Is Made By shakar#6955
+-- Script Hub Is Made By shakar#-- Script Hub Is Made By shakar#6955
 
 -- If Your Reading This Please Dont Leak This Script
 
@@ -37,18 +37,18 @@ Tab1Section:NewSlider("Walkspeed", "Makes You Walk Faster", 1000, 16, function(s
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
-Tab1Section:NewTextBox("Set Walkspeed","Sets Walkspeed", 1000, 16, function(s) -- 1000 (MaxValue) | 16 (MinValue)
+Tab1Section:NewTextBox("Set Walkspeed","Set Walkspeed", 1000, 16, function(s) -- 1000 (MaxValue) | 16 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
-	print(txt)
+	print(Done)
 end)
 
 Tab1Section:NewSlider("JumpPower", "Makes You Jump Higher", 500, 50, function(s) -- 500 (MaxValue) | 50 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
-Tab1Section:NewTextBox("Set JumpPower","Sets JumpPower", 500, 50, function(s) -- 500 (MaxValue) | 50 (MinValue)
-    game.Players.LocalPlayer.Character.Humanoid.JumpSpeed = s
-	print(txt)
+Tab1Section:NewTextBox("Set JumpPower","Set JumpPower", 500, 50, function(s) -- 500 (MaxValue) | 50 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+	print(Done)
 end)
 
 Tab1Section:NewButton("Rejoin Button Script", "Loads a Script Whenever You Get Kicked You Can Rejoin", function()
