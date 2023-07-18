@@ -45,32 +45,24 @@ Tab1Section:NewSlider("Fov Changer", "Changes Your Fov,Max Fov Is 120", 120, 0, 
     workspace.CurrentCamera.FieldOfView = s
 end)
 
-Tab1Section:NewToggle("ToggleText", "ToggleInfo", function(state)
-            local InfiniteJumpEnabled = true
+Section:NewToggle("Toggle Inf Jump", "Lets You Infinite Jump", function(state)
+    if state then
+        local InfiniteJumpEnabled = true
         game:GetService("UserInputService").JumpRequest:connect(function()
             if InfiniteJumpEnabled then
                 game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
             end
         end)
     end)
-    if state then
-        print("Toggle On")
     else
-        print("Toggle Off")
+        local InfiniteJumpEnabled = true
+        game:GetService("UserInputService").JumpRequest:connect(function()
+            if InfiniteJumpEnabled then
+                game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+            end
+        end)
+    end)
     end
-end)
-getgenv().Toggled = false
-
-local toggle = Section:NewToggle("Toggle", "Info", (state)
-    getgenv().Toggled = state
-end)
-
-game:GetService("RunService").RenderStepped:Connect(function()
-	if getgenv().Toggled then
-		toggle:UpdateToggle("Toggle On")
-	else
-		toggle:UpdateToggle("Toggle Off")
-	end
 end)
 
 Tab1Section:NewButton("Rejoin Button Script", "Loads a Script Whenever You Get Kicked You Can Rejoin", function()
