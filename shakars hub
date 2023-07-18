@@ -60,8 +60,9 @@ Tab1Section:NewTextBox("Set Fov", "Sets Fov", function(s)
 	print(s)
 end)
 
-Tab1Section:NewSlider("Gravity Changer", "Changes Your Gravity,Max Gravity Is 500", 500, 0, function(s) -- 120 (MaxValue) | 50 (MinValue)
-    workspace.Gravity
+Tab1Section:NewSlider("Set Fov", "Sets Fov", 500, 0, function(s)
+    workspace.Gravity = s
+	print(s)
 end)
 
 Tab1Section:NewButton("Rejoin Button Script", "Loads a Script Whenever You Get Kicked You Can Rejoin", function()
