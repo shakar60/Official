@@ -135,7 +135,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/XRoLLu/UWU/main/BUILD
 end)
 
 Tab1Section:NewButton("Fe Save Location Script", "Save Your Location Script", function()
-loadstring(game:HttpGet(('https://0raw.githubusercontent.com/0Ben1/fe/main/Tp%20Place%20GUI'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Tp%20Place%20GUI'),true))()
     print("Clicked")
 end)
 
