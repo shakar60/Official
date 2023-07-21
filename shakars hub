@@ -214,7 +214,7 @@ loadstring(game:HttpGet"https://pastebin.com/raw/3P1z104N")()
     print("Clicked")
 end)
 
-Tab1Section:NewLabel("Keyboard Scripts")
+Tab9Section:NewLabel("Keyboard Scripts")
 
 Tab9Section:NewButton("Keyboard Script", "Loads Keyboard Script", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
