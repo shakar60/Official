@@ -793,13 +793,6 @@ loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))()
     print("Clicked")
 end)
 
-Tab3Section:NewLabel("CamLock V3")
-
-Tab3Section:NewButton("Camlock V3", "Loads Camlock Script", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/camlockv3/main/kjnjnjn", true))()
-    print("Clicked")
-end)
-
 Tab3Section:NewLabel("Faded Hub")
 
 Tab3Section:NewButton("Faded Script", "Loads Faded Script For Dh", function()
