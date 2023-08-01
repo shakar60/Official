@@ -74,7 +74,7 @@ ToggleGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ToggleGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ToggleGui.ResetOnSpawn = false
 
-UICorner.Parent = Toggle
+UICorner.Parent = Turn Off & On
 Toggle.Name = "Turn Off & On"
 Toggle.Parent = Turn Off & OnGui
 Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
