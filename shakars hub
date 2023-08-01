@@ -75,7 +75,7 @@ ToggleGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ToggleGui.ResetOnSpawn = false
 
 UICorner.Parent = Toggle
-Toggle.Name = "Toggle"
+Toggle.Name = "Turn Off & On"
 Toggle.Parent = ToggleGui
 Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Toggle.Position = UDim2.new(0, 0, 0.454706937, 0)--position of the toggle
@@ -150,6 +150,11 @@ end)
 
 Tab1Section:NewButton("Fe Touch Fling", "Loads Fe Touch Fling", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
+    print("Clicked")
+end)
+
+Tab1Section:NewButton("Fe Fling Gui", "Loads Fe Fling Gui", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
     print("Clicked")
 end)
 
