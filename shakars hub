@@ -76,7 +76,7 @@ ToggleGui.ResetOnSpawn = false
 
 UICorner.Parent = Toggle
 Toggle.Name = "Turn Off & On"
-Toggle.Parent = ToggleGui
+Toggle.Parent = Turn Off & OnGui
 Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Toggle.Position = UDim2.new(0, 0, 0.454706937, 0)--position of the toggle
 Toggle.Size = UDim2.new(0, 80, 0, 38)--size of the toggle
