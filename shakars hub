@@ -69,7 +69,7 @@ local Toggle = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
 
 --Properties
-ToggleGui.Name = "Toggle Gui"
+ToggleGui.Name = "Turn Off & On Gui"
 ToggleGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ToggleGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ToggleGui.ResetOnSpawn = false
