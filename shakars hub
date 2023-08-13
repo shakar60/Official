@@ -1186,7 +1186,7 @@ end)
 
 Tab1Section:NewLabel("Funky Friday Script")
 
-Tab0Section:NewButton("Funky Friday Script", "Loads Funky Friday Script", function()
+Tab1Section:NewButton("Funky Friday Script", "Loads Funky Friday Script", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ShowerHead-FluxTeam/scripts/main/funky-friday-autoplay"))()
     print("Clicked")
 end)
