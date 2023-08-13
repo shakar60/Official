@@ -1184,16 +1184,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/silents.aim/
     print("Clicked")
 end)
 
-Tab3Section:NewLabel("Silent Aim V2")
-
-Tab3Section:NewButton("Working Silent Aim", "Loads Universal Working Silent Aim [ Can Change Settings ]", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/silents.aim/main/s",true))()
-    print("Clicked")
-end)
-
 Tab1Section:NewLabel("Funky Friday Script")
 
-Tab3Section:NewButton("Funky Friday Script", "Loads Funky Friday Script", function()
+Tab1Section:NewButton("Funky Friday Script", "Loads Funky Friday Script", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ShowerHead-FluxTeam/scripts/main/funky-friday-autoplay"))()
     print("Clicked")
 end)
