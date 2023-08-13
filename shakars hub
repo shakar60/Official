@@ -1183,3 +1183,10 @@ Tab3Section:NewButton("Working Silent Aim", "Loads Universal Working Silent Aim 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/silents.aim/main/s",true))()
     print("Clicked")
 end)
+
+Tab3Section:NewLabel("Silent Aim V2")
+
+Tab3Section:NewButton("Working Silent Aim", "Loads Universal Working Silent Aim [ Can Change Settings ]", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/silents.aim/main/s",true))()
+    print("Clicked")
+end)
