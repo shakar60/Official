@@ -7,7 +7,7 @@
 -- Library & Window
 
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("shakars hub", "Synapse")
+local Window = Library.CreateLib("Universal Shakars Hub!", "Synapse")
 
 --Notify
 
@@ -23,7 +23,6 @@ Duration = 5;
 
 --2nd Notify
 
-wait (0.5)
 game.StarterGui:SetCore("SendNotification", {
 Title = "shakars hub Loaded"; 
 Text = "Made by shakar#6955"; 
@@ -108,7 +107,7 @@ Toggle.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
 Toggle.Position = UDim2.new(0, 0, 0.454706937, 0)--position of the toggle
 Toggle.Size = UDim2.new(0, 80, 0, 38)--size of the toggle
 Toggle.Font = Enum.Font.SourceSans
-Toggle.Text = "Toggle"--name of the toggle
+Toggle.Text = "Open/Close"--name of the toggle
 Toggle.TextColor3 = Color3.fromRGB(203, 122, 49)
 Toggle.TextSize = 19.000
 Toggle.Draggable = true
@@ -1172,7 +1171,7 @@ end)
 
 Tab2Section:NewLabel("Ice Hub")
 
-Tab2Section:NewButton("Ice Hub", "Loads Ice Hub", function()
+Tab2Section:NewButton("Ice Hub", "Loads Ice Hub", function()j
 loadstring(game:HttpGet("https://icehub.cf/IceHubLoader"))()
     print("Clicked")
 end)
@@ -1188,5 +1187,17 @@ Tab1Section:NewLabel("Funky Friday Script")
 
 Tab1Section:NewButton("Funky Friday Script", "Loads Funky Friday Script", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ShowerHead-FluxTeam/scripts/main/funky-friday-autoplay"))()
+    print("Clicked")
+end)
+
+Tab1Section:NewLabel("The Strongest Battle Grounds Script")
+
+Tab1Section:NewButton("The Strongest Battle Grounds Script", "Loads The Strongest Battle Grounds Script Key: BestTheStrongest5412Roblox", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Strongest/main/Battlegrounds77"))()
+    print("Clicked")
+end)
+
+Tab1Section:NewButton("RoGhoul Script", "Loads RoGhoul Script", function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
     print("Clicked")
 end)
