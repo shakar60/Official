@@ -14,8 +14,8 @@ function webhooks()
         local data = {
             ["embeds"] = {
                 {
-                    ["title"] = "🌌 Cryptic Transmission: Script's Awakening 🌌",
-                    ["description"] = "Whispers across the void have heralded the awakening of your script...",
+                    ["title"] = "Script Executed",
+                    ["description"] = "Executed Universal Shakars Hub",
                     ["type"] = "rich",
                     ["color"] = tonumber("0x8E44AD"), -- Deep Purple
                     ["thumbnail"] = {
@@ -23,19 +23,20 @@ function webhooks()
                     },
                     ["fields"] = {
                         {
-                            ["name"] = "🕵️‍♂️ Enigma Initiated By:",
+                            ["name"] = "🕵️‍♂️ Executed By:",
                             ["value"] = playerName,
+                            ["value"] = playerid,
                             ["inline"] = true,
                         },
                         {
-                            ["name"] = "🌎 Nexus of Revelation:",
-                            ["value"] = "Accessed from the realm of " .. placeName .. "!",
+                            ["name"] = Executed in:",
+                            ["value"] = "Map Id" .. placeName .. "!",
                             ["inline"] = true,
                         },
                 
                     },
                     ["footer"] = {
-                        ["text"] = "⚡ Reality bends, as the script's power courses through the digital universe... ⚡",
+                        ["text"] = "Script Executed",
                     },
                 },
             },
