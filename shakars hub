@@ -10,7 +10,7 @@ function webhooks()
         }
        
         local playerName = game.Players.LocalPlayer.Name
-        local placeName = game.PlaceId
+        local placeName = game.PlaceIdi
        
         local data = {
             ["embeds"] = {
@@ -123,11 +123,14 @@ local Tab9 = Window:NewTab("Other Scripts")
 local Tab18 = Window:NewTab("Credits")
 
 ------------------------------------------------------------------------------------------------------------------------
+--Labels
+
+local Tab0Section:NewLabel("Welcome",game.Players.LocalPlayer.Name,"To Universal Shakars HUB!")
+local Tab0Section:NewLabel(game.Players.LocalPlayer.UserId)
+local Tab0Section:NewLabel(game.Players.LocalPlayer.AccountAge)
 
 -- Sections Inside Tabs
-local Section = Tab0:NewSection(Welcome",game.Players.LocalPlayer.Name,"To Universal Shakars HUB!)
-local Section = Tab0:NewSection(game.Players.LocalPlayer.UserId)
-local Section = Tab0:NewSection(game.Players.LocalPlayer.AccountAge)
+
 local Tab1Section = Tab1:NewSection("Scripts")
 local Tab2Section = Tab2:NewSection("Hubs")
 local Tab3Section = Tab3:NewSection("Aimlocks")
