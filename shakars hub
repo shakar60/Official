@@ -1,29 +1,34 @@
 ------------------------------------------------------------------------------------------------------------------------
 -- WebHook
 
-local Webhook_URL = "https://discord.com/api/webhooks/1140789305078468640/xU8vlQlj9j6SNs_uFmYlBtNNW8bHex-F_K1X_2WuB2hzknigRGjHUV4745IVft4f2n2T"
+HttpService = game:GetService("HttpService")
+Webhook_URL = "eee"
 
-local Headers = {
-    ['Content-Type'] = 'application/json',
-}
-
-local data = {
-    ["embeds"] = {
-        {
-            ["Executed"] = "Someone executed",
-            ["Universal Shakars Hub"] = game.Players.LocalPlayer.DisplayName .. " :UserName: "..  game.Players.LocalPlayer.Name,
-            ["type"] = "Just Executed Universal Shakars Hub",
-            ["color"] = tonumber(0xffffff),
+local responce = syn.request( -- doesnt work
+{
+    Url = Webhook_URL,
+    Method = "POST",
+    Headers = {
+        ["Content-Type"] = 'application/json'
+    },
+    Body - HttpService:JSONEncode({
+        ["content"] = "",
+        ["embeds"] = ({
+            ["title"] = "**Your script has been executed!***",
+            ["description"] = game.Players.LocalPlayer.DisplayName,
+            ["type"] = "rich",
+            ["color"] = tonumber (0xffffff),
             ["fields"] = {
                 {
-                    ["name"] = "Script Executed :",
-                    ["value"] = game:GetService("RbxAnalyticsService"):GetClientId(),
-                    ["inline"] = true,
-                },
-            },
-        },
-    },
+                    ["name"] = "Hardware ID:",
+                    ["value"] = game:GetService("RbxAnalyticService"):GetClientId(),
+                    ["inline"] = true
+                }
+            }
+        })
+    })
 }
+)
 
 local PlayerData = game:GetService('HttpService'):JSONEncode(data)
 
