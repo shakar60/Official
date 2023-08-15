@@ -25,7 +25,6 @@ function webhooks()
                         {
                             ["name"] = "🕵️‍♂️ Executed By:",
                             ["value"] = playerName,
-                            ["value"] = playerid,
                             ["inline"] = true,
                         },
                         {
