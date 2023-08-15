@@ -1265,6 +1265,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/packgod/main
     print("Clicked")
 end)
 
+Tab2Section:NewLabel("FrontLines Script Gui")
+
 Tab2Section:NewButton("FrontLines Script Gui", "Loads FrontLines Script Gui", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/frontlines./main/hitbox",true))()
     print("Clicked")
