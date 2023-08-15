@@ -1,7 +1,4 @@
 ------------------------------------------------------------------------------------------------------------------------
--- WebHook
-
-------------------------------------------------------------------------------------------------------------------------
 
 -- Script Hub Is Made By shakar#6955
 
@@ -1220,4 +1217,3 @@ Tab1Section:NewButton("Fe PackGod Script", "Loads Fe PackGod Script", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/packgod/main/script",true))()
     print("Clicked")
 end)
-
