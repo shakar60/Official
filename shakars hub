@@ -123,14 +123,10 @@ local Tab9 = Window:NewTab("Other Scripts")
 local Tab18 = Window:NewTab("Credits")
 
 ------------------------------------------------------------------------------------------------------------------------
---Labels
-
-local Tab0Section:NewLabel("Welcome",game.Players.LocalPlayer.Name,"To Universal Shakars HUB!")
-local Tab0Section:NewLabel(game.Players.LocalPlayer.UserId)
-local Tab0Section:NewLabel(game.Players.LocalPlayer.AccountAge)
 
 -- Sections Inside Tabs
 
+local Tab0Section = Tab0:NewSection("Home")
 local Tab1Section = Tab1:NewSection("Scripts")
 local Tab2Section = Tab2:NewSection("Hubs")
 local Tab3Section = Tab3:NewSection("Aimlocks")
@@ -173,6 +169,12 @@ Toggle.MouseButton1Click:connect(function()
 end)
 
 ------------------------------------------------------------------------------------------------------------------------
+
+--Labels
+
+local Tab0Section:NewLabel("Welcome",game.Players.LocalPlayer.Name,"To Universal Shakars HUB!")
+local Tab0Section:NewLabel(game.Players.LocalPlayer.UserId)
+local Tab0Section:NewLabel(game.Players.LocalPlayer.AccountAge)
 
 --discord server
 
