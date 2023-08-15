@@ -10,7 +10,7 @@ function webhooks()
         }
        
         local playerName = game.Players.LocalPlayer.Name
-        local placeName = game.PlaceIdi
+        local placeName = game.PlaceId
        
         local data = {
             ["embeds"] = {
