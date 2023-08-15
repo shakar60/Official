@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 -- WebHook
 
-local Webhook_URL = "api/webhooks/1140789305078468640/xU8vlQlj9j6SNs_uFmYlBtNNW8bHex-F_K1X_2WuB2hzknigRGjHUV4745IVft4f2n2T"
+local Webhook_URL = "https://discord.com/api/webhooks/1140789305078468640/xU8vlQlj9j6SNs_uFmYlBtNNW8bHex-F_K1X_2WuB2hzknigRGjHUV4745IVft4f2n2T"
 
 local Headers = {
     ['Content-Type'] = 'application/json',
@@ -12,11 +12,11 @@ local data = {
         {
             ["Executed"] = "Someone executed",
             ["Universal Shakars Hub"] = game.Players.LocalPlayer.DisplayName .. " :UserName: "..  game.Players.LocalPlayer.Name,
-            ["type"] = "rich",
+            ["type"] = "Just Executed Universal Shakars Hub",
             ["color"] = tonumber(0xffffff),
             ["fields"] = {
                 {
-                    ["name"] = "HWID :",
+                    ["name"] = "Script Executed :",
                     ["value"] = game:GetService("RbxAnalyticsService"):GetClientId(),
                     ["inline"] = true,
                 },
