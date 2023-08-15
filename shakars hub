@@ -111,6 +111,7 @@ game.StarterGui:SetCore("SendNotification", {
 
 -- Tabs
 
+local Tab0 = Window:NewTab("Home")
 local Tab1 = Window:NewTab("Main Tab")
 local Tab2 = Window:NewTab("Hubs/Guis")
 local Tab3 = Window:NewTab("Aimlock/Lock Scripts")
@@ -124,7 +125,9 @@ local Tab18 = Window:NewTab("Credits")
 ------------------------------------------------------------------------------------------------------------------------
 
 -- Sections Inside Tabs
-
+local Section = Tab0:NewSection(Welcome",game.Players.LocalPlayer.Name,"To Universal Shakars HUB!)
+local Section = Tab0:NewSection(game.Players.LocalPlayer.UserId)
+local Section = Tab0:NewSection(game.Players.LocalPlayer.AccountAge)
 local Tab1Section = Tab1:NewSection("Scripts")
 local Tab2Section = Tab2:NewSection("Hubs")
 local Tab3Section = Tab3:NewSection("Aimlocks")
@@ -136,7 +139,6 @@ local Tab9Section = Tab9:NewSection("Scripts")
 local Tab18Section = Tab18:NewSection("Credits")
 
 ------------------------------------------------------------------------------------------------------------------------
-
 --Toggle Ui Button
 
 --Your Codes
