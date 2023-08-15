@@ -111,7 +111,6 @@ game.StarterGui:SetCore("SendNotification", {
 
 -- Tabs
 
-local Tab0 = Window:NewTab("Home")
 local Tab1 = Window:NewTab("Main Tab")
 local Tab2 = Window:NewTab("Hubs/Guis")
 local Tab3 = Window:NewTab("Aimlock/Lock Scripts")
@@ -126,7 +125,6 @@ local Tab18 = Window:NewTab("Credits")
 
 -- Sections Inside Tabs
 
-local Tab0Section = Tab0:NewSection("Home")
 local Tab1Section = Tab1:NewSection("Scripts")
 local Tab2Section = Tab2:NewSection("Hubs")
 local Tab3Section = Tab3:NewSection("Aimlocks")
@@ -135,7 +133,7 @@ local Tab4Section = Tab4:NewSection("Scripts")
 local Tab6Section = Tab6:NewSection("Hitbox expander")
 local Tab5Section = Tab5:NewSection("Keystroke Tools")
 local Tab9Section = Tab9:NewSection("Scripts")
-local Tab8Section = Tab18:NewSection("Credits")
+local Tab18Section = Tab18:NewSection("Credits")
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -170,12 +168,6 @@ Toggle.MouseButton1Click:connect(function()
 end)
 
 ------------------------------------------------------------------------------------------------------------------------
-
---Labels
-
-local Tab0Section:NewLabel("Welcome",game.Players.LocalPlayer.Name,"To Universal Shakars HUB!")
-local Tab0Section:NewLabel(game.Players.LocalPlayer.UserId)
-local Tab0Section:NewLabel(game.Players.LocalPlayer.AccountAge)
 
 --discord server
 
@@ -1279,3 +1271,4 @@ Tab2Section:NewButton("FrontLines Script Gui", "Loads FrontLines Script Gui", fu
 loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/frontlines./main/hitbox",true))()
     print("Clicked")
 end)
+
