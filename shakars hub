@@ -135,9 +135,10 @@ local Tab4Section = Tab4:NewSection("Scripts")
 local Tab6Section = Tab6:NewSection("Hitbox expander")
 local Tab5Section = Tab5:NewSection("Keystroke Tools")
 local Tab9Section = Tab9:NewSection("Scripts")
-local Tab18Section = Tab18:NewSection("Credits")
+local Tab8Section = Tab18:NewSection("Credits")
 
 ------------------------------------------------------------------------------------------------------------------------
+
 --Toggle Ui Button
 
 --Your Codes
