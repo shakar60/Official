@@ -19,7 +19,7 @@ function webhooks()
                     ["type"] = "rich",
                     ["color"] = tonumber("0x8E44AD"), -- Deep Purple
                     ["thumbnail"] = {
-                        ["url"] = "https://i.imgur.com/PlaceholderImage.png", -- Replace with a placeholder image URL
+                        ["url"] = "https://ibb.co/yh0pFPV", -- Replace with a placeholder image URL
                     },
                     ["fields"] = {
                         {
