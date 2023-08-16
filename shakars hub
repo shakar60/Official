@@ -1,5 +1,23 @@
 ------------------------------------------------------------------------------------------------------------------------
 
+Key System
+
+local KeySystemUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/MaGiXxScripter0/keysystemv2api/master/ui/xrer_mstudio45.lua"))()
+KeySystemUI.New({
+    ApplicationName = "Join Discord To Get Key", -- Your Key System Application Name
+    Name = "USH", -- Your Script name
+    Info = "To Get Key Join My Discord Server", -- Info
+    DiscordInvite = "https://discord.gg/tvFafhV7VN"
+})
+repeat task.wait() until KeySystemUI.Finished() or KeySystemUI.Closed
+if KeySystemUI.Finished() and KeySystemUI.Closed == false then
+    print("Key verified, can load script")
+else
+    print("Player closed the GUI.")
+end
+
+------------------------------------------------------------------------------------------------------------------------
+
 --Webhook
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/w3bh00k/main/s",true))()
@@ -8,7 +26,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/w3bh00k/main
 
 -- Script Hub Is Made By shakar#6955
 
--- Join Discord https://discord.gg/UhceAu7y
+-- Join Discord https://discord.gg/tvFafhV7VN
 
 -- Library & Window
 
@@ -22,7 +40,7 @@ local Window = Library.CreateLib("Universal Shakars Hub!", "Synapse")
 local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
 local Notify = AkaliNotif.Notify;
 Notify({
-Description = "Join Discord https://discord.gg/g86HSsjt";
+Description = "Join Discord https://discord.gg/tvFafhV7VN";
 Title = "shakars hub Loaded";
 Duration = 5;
 });
@@ -37,7 +55,7 @@ Duration = 5;
 
 game.StarterGui:SetCore("SendNotification", {
 Title = "Join discord"; 
-Text = "https://discord.gg/g86HSsjt"; 
+Text = "https://discord.gg/tvFafhV7VN"; 
 Duration = 10; 
 })
 
@@ -125,7 +143,7 @@ end)
 
 --discord server
 
-setclipboard("https://discord.gg/g86HSsjt")
+setclipboard("https://discord.gg/tvFafhV7VN")
 
 --The Scripts
 Tab1Section:NewLabel("Local Player")
