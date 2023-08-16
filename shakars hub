@@ -2,7 +2,6 @@
 
 --Key System
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/KeySystemV2./main/Working",true))()
 
 ------------------------------------------------------------------------------------------------------------------------
 
